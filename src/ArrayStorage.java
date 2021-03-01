@@ -49,11 +49,10 @@ public class ArrayStorage {
    */
   Resume[] getAll() {
     Resume[] newStorage = new Resume[size];
-    for (int i = 0; i < size; i++) {
-      newStorage[i] = storage[i];
+    if (size >= 0) {
+      System.arraycopy(storage, 0, newStorage, 0, size);
     }
     return newStorage;
-
   }
 
   int size() {

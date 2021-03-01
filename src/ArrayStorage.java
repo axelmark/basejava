@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
-
 /**
  * Array based storage for Resumes
  */
@@ -20,7 +15,7 @@ public class ArrayStorage {
   // TODO: 01.03.2021
   void save(Resume r) {
     try {
-      if (size >= storage.length) {
+      if (size >= capacity()) {
         // Можно увеличить динамически capacity
         throw new Exception();
       }

@@ -16,7 +16,7 @@ public class ArrayStorage {
   void save(Resume r) {
     try {
       if (size >= capacity()) {
-        // Можно увеличить динамически capacity
+        // Можно увеличить динамически capacity массива
         throw new Exception();
       }
     } catch (Exception e) {

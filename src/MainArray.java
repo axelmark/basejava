@@ -4,12 +4,10 @@ import java.io.InputStreamReader;
 import java.util.UUID;
 
 /**
- *
- *
- * Interactive test for ArrayStorage implementation
- * (just run, no need to understand)
+ * Interactive test for ArrayStorage implementation (just run, no need to understand)
  */
 public class MainArray {
+
     private final static ArrayStorage ARRAY_STORAGE = new ArrayStorage();
 
     public static void main(String[] args) throws IOException {
@@ -17,7 +15,8 @@ public class MainArray {
         Resume r;
 
         while (true) {
-            System.out.print("Введите одну из команд - (list | save uuid | delete uuid | get uuid | clear | size | exit): ");
+            System.out.print(
+                "Введите одну из команд - (list | save uuid | delete uuid | get uuid | clear | size | exit): ");
             String[] params = reader.readLine().trim().toLowerCase().split(" ");
             if (params.length < 1 || params.length > 2) {
                 System.out.println("Неверная команда.");

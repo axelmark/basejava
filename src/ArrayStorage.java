@@ -54,8 +54,9 @@ public class ArrayStorage {
    */
   Resume[] getAll() {
     Resume[] newStorage = new Resume[size];
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) {
       newStorage[i] = storage[i];
+    }
     return newStorage;
 
   }
